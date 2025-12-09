@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>K-Means Customer Segmentation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="page-wrapper">
+    <nav class="navbar">
+        <div class="logo">K-Means Dashboard</div>
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('result') }}">Result</a>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-text card glass">
+            <h1>Mall Customer Segmentation</h1>
+            <p>
+                Aplikasi ini menampilkan hasil clustering K-Means pada dataset
+                <strong>Mall Customers</strong> menggunakan beberapa visualisasi:
+                Elbow Method, PCA 2D, Heatmap, dan Cluster Profiles.
+            </p>
+            <a href="{{ url_for('result') }}" class="primary-btn">
+                Lihat Hasil Clustering
+            </a>
+        </div>
+
+</div>
+</body>
+</html>
